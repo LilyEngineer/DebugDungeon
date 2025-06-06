@@ -1,6 +1,6 @@
 # 🐞 DebugDungeon: QA Test Case & Bug Tracker
 
-![App Screenshot]([Screenshot 2025-06-06 131749.png](https://github.com/LilyEngineer/DebugDungeon/blob/872bfd5993a154dfe6103bc2a1c0a58d9686debe/Screenshot%202025-06-06%20131749.png))
+![App Screenshot](https://github.com/LilyEngineer/DebugDungeon/blob/872bfd5993a154dfe6103bc2a1c0a58d9686debe/Screenshot%202025-06-06%20131749.png)
 
 **DebugDungeon** is a lightweight, browser-based tool for creating, editing, and exporting test cases and bug reports.  
 Built with vanilla JavaScript, HTML, and CSS — no backend, no build tools, no setup.

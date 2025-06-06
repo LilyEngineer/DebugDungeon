@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QA Test Case & Bug Report App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧪 QA Test Case & Bug Report App</h1>
+
+    <!-- Test Case Form -->
+    <section class="form-section">
+      <h2>📝 Add Test Case</h2>
+      <form id="testCaseForm">
+        <label for="tcTitle">Title:</label>
+        <input type="text" id="tcTitle" required />
+
+        <label for="tcDescription">Description:</label>
+        <textarea id="tcDescription" rows="3" required></textarea>
+
+        <label for="tcExpected">Expected Result:</label>
+        <textarea id="tcExpected" rows="2" required></textarea>
+
+        <label for="tcSeverity">Severity:</label>
+        <select id="tcSeverity" required>
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+          <option value="Critical">Critical</option>
+        </select>
+
+        <label for="tcStatus">Status:</label>
+        <select id="tcStatus" required>
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+
+        <button type="submit">➕ Add Test Case</button>
+      </form>
+    </section>
+
+    <!-- Test Case List -->
+    <section class="list-section">
+      <h2>📋 Test Cases</h2>
+      <ul id="testCaseList"></ul>
+    </section>
+
+    <!-- Bug Report Form -->
+    <section class="form-section">
+      <h2>🐞 Report a Bug</h2>
+      <form id="bugReportForm">
+        <label for="bugTitle">Title:</label>
+        <input type="text" id="bugTitle" required />
+
+        <label for="bugDescription">Description:</label>
+        <textarea id="bugDescription" rows="3" required></textarea>
+
+        <label for="bugExpected">Expected Result:</label>
+        <textarea id="bugExpected" rows="2" required></textarea>
+
+        <label for="bugSeverity">Severity:</label>
+        <select id="bugSeverity" required>
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+          <option value="Critical">Critical</option>
+        </select>
+
+        <label for="bugStatus">Status:</label>
+        <select id="bugStatus" required>
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+
+        <button type="submit">🐞 Submit Bug Report</button>
+      </form>
+    </section>
+
+    <!-- Bug Report List -->
+    <section class="list-section">
+      <h2>🐛 Bug Reports</h2>
+      <ul id="bugReportList"></ul>
+    </section>
+
+    <!-- Export Button -->
+    <button id="exportBtn">📤 Export All Data as JSON</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
